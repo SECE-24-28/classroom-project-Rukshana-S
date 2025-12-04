@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me | Rukshana Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contactme.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+  <h1>Contact Me</h1>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p id="form-status"></p>
+    </form>
+
+    <!-- Social Logos -->
+    <div class="social-links">
+      <a href="https://github.com/Rukshana-S" target="_blank">
+        <img src="assets/github.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/rukshana-s" target="_blank">
+        <img src="assets/linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </section>
+
+  <script src="js/contactme.js"></script>
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Lxbhwc5dEs0l4UlDsCOJw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+</body>
+</html>

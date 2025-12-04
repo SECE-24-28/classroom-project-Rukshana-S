@@ -1,13 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+  <!-- Navbar -->
+<div class="navbar">
+  <div class="navbar-container">
+    <div class="logo">Portfolio</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a> <!-- ✅ This will scroll to the Contact section -->
+    </div>
+  </div>
+</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      <div class="hero-left">
+        <p class="greeting">Hi ! there👋...</p>
+        <h1>I'm Rukshana</h1>
+        <p class="subtitle">
+         Web Developer & Tech Enthusiast
+        </p>
+        <a href="#about" class="btn-primary">More About Me</a>
+      </div>
+      <div class="hero-right">
+<img src="assets/portfolio.jpg" alt="Profile Photo" />
+
+</div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+    <section id="about" class="about">
+  <h1>About Me</h1>
+  <p>
+    Hello! I’m <strong>Rukshana</strong>, a Computer Science undergraduate at Sri Eshwar College of Engineering. 
+    I’m passionate about learning and building real-world applications using technologies like <strong>HTML, CSS, JavaScript, Python, Java, and C++</strong>.
+  </p>
+  <p>
+    I’m currently exploring full-stack web development and working on personal projects that combine both creativity and logic. 
+    I enjoy solving problems, collaborating with others, and continuously improving my skills.
+  </p>
+  <h2>Skills</h2>
+  <ul>
+    <li>Languages: Python, Java, C++,C</li>
+    <li>Frontend: HTML, CSS, Javascript</li>
+    <li>Backend: MongoDB (for storing contact data)</li>
+    <li>Tools: Git, VS Code, GitHub</li>
+  </ul>
+</section>
+
+  <!-- Projects Section -->
+
+  <section id="projects" class="projects">
+  <h1>Projects</h1>
+  <div class="project-grid">
+
+    <!-- Attendance Tracker -->
+    <div class="project-card">
+      <img src="assets/attendance.png" alt="Attendance Tracker">
+      <h3>Attendance Tracker</h3>
+      <p>Web app for school attendance using Python & Django.</p>
+      <a href="https://github.com/Rukshana-S/Attendance-tracker" target="_blank">View Project →</a>
+    </div>
+          
+    <!-- Wheeze Detector -->
+  <div class="project-card">
+   <img src="assets/wheeze.png" alt="Wheeze Detector">
+   <h3>Wheeze Detector</h3>
+   <p>Wearable device for children using ESP32 and sensors.</p>
+   <a href="assets/wheeze.pdf" download>Download PDF ↓</a>
+  </div>
+
+    <!-- Madurai Blog -->
+    <div class="project-card">
+      <img src="assets/madurai-blog.png" alt="Madurai Blog">
+      <h3>Madurai Travel Blog</h3>
+      <p>A personal blog that shares experiences, photos, and culture of Madurai.</p>
+      <a href="https://rukshana-s.github.io/Blog/" target="_blank">View Project →</a>
+    </div>
+
+
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+  <h1>Contact Me</h1>
+  <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send Message</button>
+    <p id="form-status"></p>
+  </form>
+
+  <!-- Social -->
+  <div class="social-links">
+    <a href="https://github.com/Rukshana-S" target="_blank">
+      <img src="assets/github.png" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/rukshana-s-9a6374315/" target="_blank">
+      <img src="assets/linkedin.png" alt="LinkedIn" />
+    </a>
+  </div>
+</section>
+
+<!-- ✅ Include this JS below the form -->
+<script src="js/contactme.js"></script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Lxbhwc5dEs0l4UlDsCOJw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+ <footer class="site-footer">
+  &copy; 2025 Rukshana. All rights reserved.
+</footer>
+
+  <script src="js/contactme.js"></script>
+</body>
 </html>
